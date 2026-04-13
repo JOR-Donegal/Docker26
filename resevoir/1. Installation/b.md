@@ -1,19 +1,25 @@
-# Visual Studio Code
+# Docker
 
-I installed Visual Studio Code (VSC) using instructions from [here](https://code.visualstudio.com/docs/setup/linux). I downloaded the .deb file and installed. The commands were
+To install the basic Docker package, I followed the [instructions](https://docs.docker.com/desktop/setup/install/linux/ubuntu/).
+
+At time of writing
 
 ````
-sudo apt-get install wget gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo apt-get install ca-certificates curl
 
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo install -m 0755 -d /etc/apt/keyrings
 
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 
-rm -f packages.microsoft.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo docker run hello-world
 
 ````
