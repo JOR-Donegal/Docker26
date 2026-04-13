@@ -14,4 +14,6 @@ _Docker_ is perhaps the best known platform as a service (PaaS) container ecosys
 
 A container is created from a configuration file, or you can create an image to create containers.
 
+As applications became ever larger and more complex, one approach taken was that of _micro-services_. Each component of an application becomes separate, allowing developers to focus on one component for updates and bugfixes, rather than on an entire monolithic application. And components can be replicated to _scale-out_ as demand requires, with a _load balancing_ layer. 
+
 The big picture...containers are a way to achieve a micro-services architecture, where each component is separate, independent, may be written in a different language, etc. Teams can develop components independently of each other. Do some background reading on microservices now.

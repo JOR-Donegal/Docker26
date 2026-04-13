@@ -17,3 +17,8 @@ sudo apt update
 sudo apt install code
 
 ````
+I add extensions for Docker and Python (you should know how to do this!!). 
+
+Press [CTRL][SHIFT][P] for the command palette, Type Python and select Python Interpreter. Use the default or recommended version.
+
+Finally, I create a folder called Docker in my home directory. Each example I do will be in a subdirectory here.
