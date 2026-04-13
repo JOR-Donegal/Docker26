@@ -1,4 +1,4 @@
-# Ubuntu Desktop
+# Docker Desktop
 
 For installation, look [here](https://docs.docker.com/get-docker/) and follow the instructions for your OS or system. Use a fresh image of Ubuntu and go through the install very carefully.
 
@@ -21,6 +21,3 @@ sudo apt update
 pip install gunicorn
 sudo apt install gunicorn
 ````
-
-
-
