@@ -2,22 +2,22 @@
 
 You installed gunicorn way back at the start of these exercises. Check now to make sure you did so!
 
-I download a simple Docker Python example file from Github.
+I change directory to __~/Docker__ and I download a simple Docker Python example file from Github.
 
 ````
 git clone https://github.com/docker/python-docker
 ````
 
-I take a look at the contents of the python-docker directory.
+I take a look at the contents of the _python-docker_ directory.
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig17.jpg">
 <figcaption>Fig 17. Directory.</figcaption>
 </figure>
 
-Use the more command to look at the contents of each file. Do some background reading to understand __Flask__, but it is a small and lightweight Python web framework very commonly used. 
+Use the __more__ command to look at the contents of each file. Do some background reading to understand __Flask__, but it is a small and lightweight Python web framework very commonly used. 
 
-Now I have an application, I need to containerize it. My working directory is still _~/Docker/python-docker_, I run the command 
+Now I have an application, I need to containerize it. My working directory is _~/Docker/python-docker_, I run the command 
 
 ````
 docker init
