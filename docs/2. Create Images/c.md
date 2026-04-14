@@ -6,7 +6,7 @@ Some of my screenshots below indicate I'm using ub2204. Do not worry about that,
 
 ````
 sudo adduser <username> sudo 
- ````
+````
 
 There are very many prebuilt images on Docker Hub. In ordinary development, we will use these pre-built images.
 
