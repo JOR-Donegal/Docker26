@@ -1,16 +1,16 @@
 # Linux Image
 
-Some of my screenshots below indicate I'm using ub2204. Do not worry about that, this has all ben tested on ub2404. Also, 
+Some of my screenshots below indicate I'm using ub2204. Do not worry about that, this has all ben tested on ub2404.
 
  I am leaving out the sudo from the following commands, you may need to insert it. Alternatively, add you user name to the sudo group (put your login account name in the <> brackets!) using
 
- ````
+````
 sudo adduser <username> sudo 
  ````
 
 There are very many prebuilt images on Docker Hub. In ordinary development, we will use these pre-built images.
 
-Busybox is a very small Linux image; type the commands 
+_Busybox_ is a very small Linux image; type the commands 
 
 ````
 mkdir busy
@@ -57,7 +57,7 @@ I start the container again and open a second terminal to check to see if its vi
 </figure>
 
 
-To exit from the container terminal and kill the container, type __[ctrl][c]__ or __[ctrl][d]__ or from the shell, __exit__. Containers are ephemeral, once you exit, all your changes are gone!
+To exit from the container terminal and kill the container, type __[ctrl][c]__ or __[ctrl][d]__ or from the shell, __exit__. Containers are ephemeral, once you exit, all your changes are gone.
 
 I can use the command 
 
@@ -97,3 +97,5 @@ We could restart a container with
 docker rm 8e730d475d28
 ````
 If you want to exit and leave the container running, type __[ctrl][P]__ or __[ctrl][Q]__
+
+Stop and kill all containers before moving on.
