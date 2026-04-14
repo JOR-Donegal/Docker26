@@ -6,7 +6,7 @@ Run the command
 
 ````
 sudo docker run --name bb1 -itd busybox /bin/sh
-`````
+````
 
 The bash shell is now running in the background. To get the console back, type
 
