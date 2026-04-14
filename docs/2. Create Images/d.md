@@ -99,6 +99,7 @@ sudo docker run --name WebServer3 --restart=always -p 82:80 -d nginx
 ````
 
 to set up a different restart policy. There are several policy alternatives
+
 - no
 - failure
 - always

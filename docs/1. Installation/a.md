@@ -19,6 +19,5 @@ sudo apt install python3-pip
 # I need a simple web server
 sudo apt update
 
-pip install gunicorn
 sudo apt install gunicorn
 ````
