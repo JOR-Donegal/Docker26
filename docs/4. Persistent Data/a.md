@@ -16,29 +16,29 @@ Create a file; I used the command
 touch JOR.txt
 ````
 
-and then __|ls -l__. This created a file called JOR.txt and I viewed the directory to confirm.
+and then __ls -l__. This created a file called JOR.txt and I viewed the directory to confirm.
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig31.jpg">
 <figcaption>Fig 31. Test file.</figcaption>
 </figure>
 
-I can exit form the container by typing [ctrl][p] and then [ctrl][q] and then type docker ps to ensure the container is still running.
+I can exit form the container by typing __[ctrl][p]__ and then __[ctrl][q]__ and then type __docker ps__ to ensure the container is still running.
 
 ````
 sudo docker attach bb1
 ````
 
-Type the command ls -l to make sure the file is still there.
+Type the command __ls -l__ to make sure the file is still there.
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig32.jpg">
 <figcaption>Fig 32. Test file (again!).</figcaption>
 </figure>
 
-If I exit using [ctrl][d] the process has been stopped and is no longer running. Check this.
+If I exit using __[ctrl][d]__ the process has been stopped and is no longer running. Check this.
 
-Restart the process, check.
+Restart the process, check
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig33.jpg">
@@ -54,7 +54,7 @@ Reattach to the container and check to see if the file is there.
 
 Its still there! The data is persistent, the container was shut down but not destroyed.
 
-Exit by typing [ctrl][p] and then [ctrl][q]
+Exit by typing __[ctrl][p]__ and then __[ctrl][q]__
 
 Type the commands
 
