@@ -7,7 +7,7 @@ We need to understand the term _image_. We can create a master copy of an operat
 <figcaption>Fig 1. The docker hub.</figcaption>
 </figure>
 
-I can also check locally, to which images I have downloaded.
+I can also check locally, to which images I have downloaded using __sudo docker images__.
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig2.png">
