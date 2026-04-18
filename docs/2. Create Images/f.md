@@ -8,6 +8,12 @@ When I build an image using __docker build__, it caches the result of each instr
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig42.jpg">
-<figcaption>Fig . Image.</figcaption>
+<figcaption>Fig. Image.</figcaption>
 </figure>
 
+When we create a container from an image , we add an extra container layer. If we rebuild and layers have not changed, they are taken from cache. Where a change has been made, all layers after that point are rebuilt.
+
+<figure>
+<img src = "https://jor-donegal.github.io/Docker26/images/fig43.jpg">
+<figcaption>Fig. Image.</figcaption>
+</figure>
