@@ -1,5 +1,7 @@
 # Python Container
 
+If you check DockerHub, you will see that there are base images for Python.
+
 You installed gunicorn way back at the start of these exercises. Check now to make sure you did so!
 
 I change directory to __~/Docker__ and I download a simple Docker Python example file from Github.
@@ -14,6 +16,8 @@ I take a look at the contents of the _python-docker_ directory.
 <img src = "https://jor-donegal.github.io/Docker26/images/fig17.jpg">
 <figcaption>Fig 17. Directory.</figcaption>
 </figure>
+
+Using __more__, look into each file and understand!
 
 Use the __more__ command to look at the contents of each file. Do some background reading to understand __Flask__, but it is a small and lightweight Python web framework very commonly used. 
 
