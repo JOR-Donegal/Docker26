@@ -1,6 +1,6 @@
 # The problem
 
-When a container is terminated, any data which has changed is lost. There are several different ways data can be stored outside of the container. Start by running the docker ps command and if any containers are running, stop them and delete them.
+When a container is terminated, any data which has changed is lost. There are several different ways data can be stored outside of the container. Start by running the __docker ps__ command and if any containers are running, stop them and delete them.
 
 Try the command 
 
@@ -16,14 +16,14 @@ Create a file; I used the command
 touch JOR.txt
 ````
 
-and then __ls -l__. This created a file called JOR.txt and I viewed the directory to confirm.
+and then __ls -l__. This created a file called __JOR.txt__ and I viewed the directory to confirm.
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig31.jpg">
 <figcaption>Fig 31. Test file.</figcaption>
 </figure>
 
-I can exit form the container by typing __[ctrl][p]__ and then __[ctrl][q]__ and then type __docker ps__ to ensure the container is still running.
+I can exit from the container by typing __[ctrl][p]__ and then __[ctrl][q]__ and then type __docker ps__ to ensure the container is still running.
 
 ````
 sudo docker attach bb1
@@ -38,7 +38,7 @@ Type the command __ls -l__ to make sure the file is still there.
 
 If I exit using __[ctrl][d]__ the process has been stopped and is no longer running. Check this.
 
-Restart the process, check
+Restart the process using __docker start__ and check
 
 <figure>
 <img src = "https://jor-donegal.github.io/Docker26/images/fig33.jpg">

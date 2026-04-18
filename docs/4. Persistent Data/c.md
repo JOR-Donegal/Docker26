@@ -4,7 +4,7 @@ An alternative is to create a volume when we are creating the container. The vol
 
 Start by running the docker ps command and if any containers are running stop them and delete them.
 
-I create a shared data store called datastore1 for use by multiple busybox instances. 
+I create a shared data store called __datastore1__ for use by multiple busybox instances. 
 
 Try the command
 
