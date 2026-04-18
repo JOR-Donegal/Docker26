@@ -23,3 +23,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 
 ````
+
+When you type any Docker command, you can use __--help__ as an assist to get the options for that command.

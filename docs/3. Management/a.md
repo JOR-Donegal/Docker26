@@ -1,8 +1,8 @@
-# Simple techniques
+# Basics
 
 We have already seen how to run a container with an interactive terminal and how to force it into the background.
 
-Run the command 
+Run the command
 
 ````
 sudo docker run --name bb1 -itd busybox /bin/sh
