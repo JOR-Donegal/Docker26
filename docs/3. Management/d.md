@@ -23,7 +23,9 @@ We can run containers in the foreground (attached) or background (detached).
 
 If a container needs input from a user, you can __docker run__ with __-it__ flags, to have STDIN and a terminal. Alternatively, you could __docker start__ a container with __-ai__ flags.
 
-Another useful option is _--rm_, which removes the container when it finishes running.
+Another useful option is __--rm__, which removes the container when it finishes running.
+
+You can copy files to and from a running container using __docker cp _source destination___.
 
 ## Cleaning up containers
 
