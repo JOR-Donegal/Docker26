@@ -1,4 +1,4 @@
-# Lifecycle
+# Cheat Sheet
 
 In this section, I'm going to work through using the python-docker example. First use the command 
 
@@ -14,12 +14,16 @@ to get a list of all the available Docker commands. Look through them, but you w
 
 We can run containers in the foreground (attached) or background (detached).
 
+## Running containers.
+
 - __docker run _name___ runs a container in the foreground, blocking the terminal. The container is attached, if the container logs data to the terminal, it will appear here.
 - __docker run -d  _name___ runs a container in the background, the container is detached.
 - __docker container attach _name___ lets me reattach a running container.
 - __docker logs _name___ lets me see information that has been printed to the terminal, without reattaching.
 
 If a container needs input from a user, you can __docker run__ with __-it__ flags, to have STDIN and a terminal. Alternatively, you could __docker start__ a container with __-ai__ flags.
+
+Another useful option is _--rm_, which removes the container when it finishes running.
 
 ## Cleaning up containers
 
@@ -29,3 +33,13 @@ Good practice is to keep everything clean. Containers need to be stopped before 
 - __docker rm _name1 name2 name3___ remove three containers.
 
 ## Cleaning up images
+- __docker _images___ lists all our existing images.
+
+If a container is using an image, you cannot delete the image.
+
+- __docker images prune__ will remove all unused images.
+
+- __docker rmi _name___ removes a specific image, deleting all layers.
+
+- 
+
