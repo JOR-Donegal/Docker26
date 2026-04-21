@@ -1,6 +1,8 @@
 # Docker
 
-To install the basic Docker package, I followed the [instructions](https://docs.docker.com/desktop/setup/install/linux/ubuntu/).
+To install the basic Docker package, I followed the [instructions](https://docs.docker.com/desktop/setup/install/linux/ubuntu/). 
+
+I created a Docker account and logged in.
 
 At time of writing
 

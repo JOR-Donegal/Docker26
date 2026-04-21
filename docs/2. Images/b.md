@@ -1,4 +1,4 @@
-# Finally
+# Under the hood
 
 An image could be considered as a template for building containers.
 

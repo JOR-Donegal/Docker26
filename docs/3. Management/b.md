@@ -1,6 +1,6 @@
 # Performance 
 
-Linux has a command top which allows us to see the processes which are running. We can do the same in containers. I tried the command 
+Linux has a command __top__ which allows us to see the processes which are running. We can do the same in containers. I tried the command 
 
 ````
 sudo docker top WebServer3
