@@ -29,11 +29,14 @@ sudo docker images -a
 ````
 
 The original is still there. The tag command makes a copy rather than renaming.
-Next, I need to authenticate to Docker Hub. Use your own credentials!
+Next, I need to authenticate to Docker Hub. 
+The link to the web browser didn't work (which is a more secure approach).
+Using your own credentials...
 
 ````
 sudo docker login -u johnoraw
 ````
+
 Then I push the image.
 
 ````
