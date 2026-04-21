@@ -14,9 +14,19 @@ to get a list of all the available Docker commands. Look through them, but you w
 
 We can run containers in the foreground (attached) or background (detached).
 
+## Dockerize an application
+
+Where I have an application, for example in Python, I can run __docker init__ to create the Dockerfile and any required assts.
+
+## Containers
+
+- __sudo docker ps__ will show running container processes
+- __sudo docker container ls -a__ will show all containers
+
+
 ## Building containers
 
-Make sure to include the dot below, to build the docker file in the working folder.
+Make sure to include the dot below, to build from the docker file in the working folder.
 
 - __docker build .__
 
@@ -43,8 +53,15 @@ Automatic container names are long and unwieldy. It makes more sense to name a c
 
 Good practice is to keep everything clean. Containers need to be stopped before deletion.
 
-- __docker stop _name___ stops a container
-- __docker rm _name1 name2 name3___ remove three containers.
+- __docker kill _name___ stops a container
+- __docker stop -t 10 _name___ stops a container gracefully after 10 seconds
+- __docker rm _name1 name2 name3___ removes three containers.
+
+## Images
+- __sudo docker pull _image___ will pull an image from Docker Hub.
+- __sudo docker run _image___ will will create a running container from this image.
+
+
 
 ## Cleaning up images
 
