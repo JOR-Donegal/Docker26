@@ -28,6 +28,7 @@ sudo docker tag python-docker-server:latest johnoraw/jortest:latest
 sudo docker images -a
 ````
 
+The original is still there. The tag command makes a copy rather than renaming.
 Next, I need to authenticate to Docker Hub. Use your own credentials!
 
 ````
