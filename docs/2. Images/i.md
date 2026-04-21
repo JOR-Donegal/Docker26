@@ -19,15 +19,29 @@ I log into Docker through a browser and go to repositories. I create a new repo 
 <figcaption>Fig. Docker Repo.</figcaption>
 </figure>
 
-On my test VM, I create an image called __jortest__ and I run the command 
+Earlier, I created a Python image. __sudo docker images__ show me that it is called _python-docker-server:latest_  
+
+However, my repo is called johnoraw/jortest, I need to rename the image to whatever the repo expects.
 
 ````
-docker push johnoraw/jortest
+sudo docker tag python-docker-server:latest johnoraw/jortest:latest
+sudo docker images -a
 ````
 
+Next, I need to authenticate to Docker Hub. Use your own credentials!
 
+````
+sudo docker login -u johnoraw
+````
+Then I push the image.
 
+````
+docker push johnoraw/jortest:latest
+````
 
+When I check online...
 
-
-
+<figure>
+<img src = "https://jor-donegal.github.io/Docker26/images/fig45.jpg">
+<figcaption>Fig. Docker Repo, verify push.</figcaption>
+</figure>
